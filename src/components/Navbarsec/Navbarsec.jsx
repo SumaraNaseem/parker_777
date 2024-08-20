@@ -8,7 +8,7 @@ function Navbarsec() {
   return (
     <div>
     <div className='bg-custom-yellow-background  pt-[90px] py-2 flex justify-center '>
-          <ul className='flex  max-w-full justify-center items-center overflow-y-auto scrollbar-hidden  lg:w-full  '>
+          <ul className='flex  max-w-full  items-center overflow-y-auto scrollbar-hidden  w-[1013px]  '>
             {navbarLinks.map((link, index) => (
               <div
                 key={index}
