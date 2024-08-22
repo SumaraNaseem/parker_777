@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaChevronDown, FaLink } from 'react-icons/fa';
+import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 import { sideBarLinks } from '../../data/data';
-import { MdArrowBackIos } from "react-icons/md";
 
 const Sidebar = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -17,21 +17,21 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="h-screen bg-sidebar-bg-color text-white">
+    <div className="h-screen sticky top-0 bg-sidebar-bg-color text-white">
       <ul className="space-y-0.2">
         {sideBarLinks.map((item, index) => (
           <li key={index} className="relative bg-sidebar-bg-color">
             <button
-              className="w-full py-2 px-4 text-left border-b border-b-slate-800 flex justify-between items-center bg-sidebar-bg-color hover:bg-gray-700"
               onClick={() => toggleDropdown(index)}
+              className="w-full py-2 px-4 text-left border-b border-b-slate-800 flex justify-between items-center bg-sidebar-bg-color hover:bg-gray-700"
             >
               <span className="flex items-center">
-                <span  className="mr-2" >{item.icon}</span> {item.name}
+                <span className="mr-2">{item.icon}</span> {item.name}
               </span>
-              < MdArrowBackIos/>
-              
-              {/* <FaChevronDown /> */}
+              {/* Conditionally render the icon based on openDropdown */}
+              {openDropdown === index ? <MdArrowForwardIos /> : <MdArrowBackIos />}
             </button>
+            {/* Dropdown content */}
             {openDropdown === index && (
               <ul className="bg-gray-700">
                 {Array.from({ length: 3 }, (_, subIndex) => (
@@ -45,6 +45,7 @@ const Sidebar = () => {
                       </span>
                       <FaChevronDown />
                     </button>
+                    {/* Sub-dropdown content */}
                     {openSubDropdown === subIndex && (
                       <ul className="bg-gray-600">
                         {Array.from({ length: 3 }, (_, subSubIndex) => (

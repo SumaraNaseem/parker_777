@@ -9,7 +9,9 @@ module.exports = {
         'custom-blue-background': '#001F3F',
         'custom-yellow-background':'#FFC007',
         'footer-bg-color':'#101010',
-        'sidebar-bg-color':'#00162D'
+        'sidebar-bg-color':'#00162D',
+        'tablecolor-blue':'#98D4FF',
+        'tableColor-pink':'#FFC3D0',
         
         
       },
