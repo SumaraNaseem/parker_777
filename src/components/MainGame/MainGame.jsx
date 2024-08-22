@@ -671,8 +671,8 @@ function MainGame() {
     <p className='uppercase text-[#343A40] px-2 text-[14px] font-[600] font-ubuntu'>Upcoming Greyhound Racing</p>
   </div>
  
-  <div  className='overflow-x-auto  whitespace-nowrap flex space-x-1 py-2 scrollbar-hide'>
-     {Array.from({ length: 5 }).map((_, index) => (
+  <div  className='overflow-scroll w-[600px]  whitespace-nowrap flex space-x-1 py-2 '>
+     {Array.from({ length: 10 }).map((_, index) => (
     <div key={index} className="w-28  bg-[#F1F1F1] rounded-md flex-none">
       <div className='flex items-center m-1'>
         <img className='w-10 h-6' src='https://flagcdn.com/h40/za.png' alt="image" />
