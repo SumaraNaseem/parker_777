@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import { GrAnnounce } from "react-icons/gr";
-
+import { Link } from 'react-router-dom';
 import { navbarLinks } from "../../data/data"
 
 function Navbarsec() {
     const [activeIndex, setActiveIndex] = useState(null);
   return (
     <div>
-    <div className='bg-custom-yellow-background  pt-[90px] py-2 flex justify-center '>
+    <div className='bg-custom-yellow-background  pt-[86px] py-1 flex justify-center '>
           <ul className='flex  max-w-full  items-center overflow-y-auto scrollbar-hidden  w-[1013px]  '>
             {navbarLinks.map((link, index) => (
               <div
@@ -20,13 +20,13 @@ function Navbarsec() {
                   {link.icon}
                 </li>
                 <li>
-                  <a
-                    href={link.href}
+                <Link to={link.href}
+                   
                     className={`text-[12.72px] whitespace-nowrap uppercase font-[500] font-poppins 
                    p-1`}
                   >
                     {link.name}
-                  </a>
+                    </Link>
                 </li>
               </div>
             ))}

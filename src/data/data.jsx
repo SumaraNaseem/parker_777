@@ -10,8 +10,20 @@ import { MdOutlineCasino } from "react-icons/md";
 import { MdOutlineSportsKabaddi } from "react-icons/md";
 import { GiClick } from "react-icons/gi";
 export const navbarLinks = [
-    { name: "Home", href: "/dashboard" ,icon:<IoMdHome/> },
+    { name: "Home", href: "/Dashboard" ,icon:<IoMdHome/> },
     { name: "INplay", href: "/sports/inplay" ,icon:<IoMdPlay/>},
+    { name: "Cricker", href: "/sports/4",icon:<GiCricketBat/> },
+    { name: "Football", href: "/sports/1" ,icon:<FaFootball/>},
+    { name: "Tennis", href: "/sports/2" ,icon:<IoTennisballOutline/>},
+    { name: "Casino", href: "/casino/99999",icon:<MdOutlineCasino/> },
+    { name: "Horse rasing", href: "/sports/7" ,icon:<FaHorse/>},
+    { name: "Greyhound racing ", href: "sports/4339" ,icon:<FaDog/>},
+    { name: "Kabaddi", href: "/sports/99994",icon:<MdOutlineSportsKabaddi/> },
+    { name: "Politics", href: "/sports/2378961" ,icon:<GiClick/>},
+   
+  ];
+  export const sideBarLinks = [
+   
     { name: "Cricker", href: "/sports/4",icon:<GiCricketBat/> },
     { name: "Football", href: "/sports/1" ,icon:<FaFootball/>},
     { name: "Tennis", href: "/sports/2" ,icon:<IoTennisballOutline/>},
@@ -35,6 +47,12 @@ export const navbarLinks = [
     // Add more image URLs as needed
   ];
   
+  export const MainGamesImage = [
+    {image_game:'https://parker777.io/assets/img/casino/auragaming.png', label:"Click hare to play"},
+    { image_game:'https://parker777.io/assets/img/casino/aviator.png',label:"Click hare to play"},
+   
+   
+  ];
 
   export const images_card_game = [
     {image_game:'https://parker777.io/assets/img/casino/aviator.png', label:"aviator"},

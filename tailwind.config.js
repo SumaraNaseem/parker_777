@@ -8,7 +8,9 @@ module.exports = {
       backgroundColor: {
         'custom-blue-background': '#001F3F',
         'custom-yellow-background':'#FFC007',
-        'footer-bg-color':'#101010'
+        'footer-bg-color':'#101010',
+        'sidebar-bg-color':'#00162D'
+        
         
       },
       fontFamily: {
@@ -20,9 +22,12 @@ module.exports = {
           light: '#F3E8FF', // Example light color
           DEFAULT: '#A855F7', // Default color
           dark: '#343A40', // Example dark color
+          android:'#95CF00'
         },
       },
     },
   },
-  plugins: [],
+  plugins: [
+   // other plugins...
+  ],
 }
