@@ -24,11 +24,27 @@ function Page() {
   return (
     <div><Navbar />
       <Navbarsec />
-      <div class="grid grid-cols-[2fr_7.5fr_2.5fr] space-x-2 mt-2 ">
+      <div className="grid grid-cols-12 gap-4">
+  <div className="col-span-2 bg-gray-200">
+  <Sidebar />
+  </div>
+
+  <div className="col-span-10 grid grid-cols-10 gap-4">
+    <div className="col-span-8">
+    <MainGame />
+    </div>
+
+    <div className="col-span-2 ">
+    <RightSideCard />
+    </div>
+  </div>
+</div>
+
+      {/* <div class="grid grid-cols-[2fr_7.5fr_2.5fr] space-x-2 mt-2 ">
         <div class="col-span-1"><Sidebar /></div>
         <div class="col-span-1"><MainGame /></div>
         <div class="col-span-1"><RightSideCard /></div>
-      </div>
+      </div> */}
     </div>
   )
 }
