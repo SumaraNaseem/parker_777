@@ -4,8 +4,8 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/page";
 import Dashboard from "./pages/Dashboard/page"
-import Blogs from "./pages/Blog/page";
-import Contact from "./pages/Contact/page";
+import Inplay from './pages/Inplay/page'
+
 
 
 function App() {
@@ -14,8 +14,8 @@ function App() {
       <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Dashboard" element={<Dashboard />} />
-          <Route path="/Blogs" element={<Blogs />} />
-          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Inplay" element={<Inplay />} />
+         
       </Routes>
     </BrowserRouter>
   );

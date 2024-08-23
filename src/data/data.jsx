@@ -11,7 +11,7 @@ import { MdOutlineSportsKabaddi } from "react-icons/md";
 import { GiClick } from "react-icons/gi";
 export const navbarLinks = [
     { name: "Home", href: "/Dashboard" ,icon:<IoMdHome/> },
-    { name: "INplay", href: "/sports/inplay" ,icon:<IoMdPlay/>},
+    { name: "INplay", href: "/Inplay" ,icon:<IoMdPlay/>},
     { name: "Cricker", href: "/sports/4",icon:<GiCricketBat/> },
     { name: "Football", href: "/sports/1" ,icon:<FaFootball/>},
     { name: "Tennis", href: "/sports/2" ,icon:<IoTennisballOutline/>},
