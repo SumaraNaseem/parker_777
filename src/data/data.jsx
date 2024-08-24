@@ -12,14 +12,14 @@ import { GiClick } from "react-icons/gi";
 export const navbarLinks = [
     { name: "Home", href: "/Dashboard" ,icon:<IoMdHome/> },
     { name: "INplay", href: "/Inplay" ,icon:<IoMdPlay/>},
-    { name: "Cricker", href: "/sports/4",icon:<GiCricketBat/> },
-    { name: "Football", href: "/sports/1" ,icon:<FaFootball/>},
-    { name: "Tennis", href: "/sports/2" ,icon:<IoTennisballOutline/>},
-    { name: "Casino", href: "/casino/99999",icon:<MdOutlineCasino/> },
-    { name: "Horse rasing", href: "/sports/7" ,icon:<FaHorse/>},
-    { name: "Greyhound racing ", href: "sports/4339" ,icon:<FaDog/>},
-    { name: "Kabaddi", href: "/sports/99994",icon:<MdOutlineSportsKabaddi/> },
-    { name: "Politics", href: "/sports/2378961" ,icon:<GiClick/>},
+    { name: "Cricket", href: "/cricket",icon:<GiCricketBat/> },
+    { name: "Football", href: "/football" ,icon:<FaFootball/>},
+    { name: "Tennis", href: "/tennis" ,icon:<IoTennisballOutline/>},
+    { name: "Casino", href: "/casino",icon:<MdOutlineCasino/> },
+    { name: "Horse rasing", href: "/horse-rasing" ,icon:<FaHorse/>},
+    { name: "Greyhound racing ", href: "greyhound-racing" ,icon:<FaDog/>},
+    { name: "Kabaddi", href: "/kabaddi",icon:<MdOutlineSportsKabaddi/> },
+    { name: "Politics", href: "/politics" ,icon:<GiClick/>},
    
   ];
   export const sideBarLinks = [

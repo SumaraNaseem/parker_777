@@ -17,7 +17,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="h-screen  sticky top-0 bg-sidebar-bg-color text-white">
+    <div className="h-[100%] w-[230px] sticky top-0 bg-sidebar-bg-color text-white">
       <ul className="space-y-0.2">
         {sideBarLinks.map((item, index) => (
           <li key={index} className="relative bg-sidebar-bg-color">

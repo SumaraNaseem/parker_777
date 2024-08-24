@@ -15,10 +15,10 @@ function page() {
       <Navbarsec />
       <Header />
       <Game />
-        <CardGames/>
-       <LIveCasino/>
-        <RoyelGame/>
-        <Footer/> 
+      <CardGames/>
+      <LIveCasino/>
+      <RoyelGame/>
+      <Footer/> 
     </div>
   )
 }

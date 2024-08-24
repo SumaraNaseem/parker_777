@@ -1,10 +1,8 @@
 import React from 'react'
 import Navbar from '../../components/Navbar/nabvar';
 import Navbarsec from '../../components/Navbarsec/Navbarsec';
-// import Cricket from '../../components/Cricket/Cricket';
-// import Table from '../../components/Table/Table'
-// import LayOut from '../../components/Layout/Layout';
-import Inplay from '../../components/Inplay/Inplay'
+import FootBall from '../../components/Football/Football'
+
 
 function page() {
   return (
@@ -13,8 +11,8 @@ function page() {
               <Navbar />
             </div>
             <div className="block ">
-                <Navbarsec />
-                <Inplay/>
+                <Navbarsec/>
+                <FootBall/>
             </div>
         </div>
   )
