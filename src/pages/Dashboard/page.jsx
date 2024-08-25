@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
-import LayOut from '../../components/Layout/Layout'
+import React, { useState } from "react";
+import LayOut from "../../components/Layout/Layout";
 
-
-
-function Page() {
+function Page({ saleemState }) {
   const [activeItem, setActiveItem] = useState(null);
   const [dropdownOpen, setDropdownOpen] = useState(null);
   const [subDropdownOpen, setSubDropdownOpen] = useState(null);
@@ -22,9 +20,9 @@ function Page() {
   };
   return (
     <div>
-      <LayOut/>
+      <LayOut saleemState={saleemState} />
     </div>
-  )
+  );
 }
 
-export default Page
+export default Page;
