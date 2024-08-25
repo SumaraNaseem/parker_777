@@ -39,7 +39,7 @@ function MainGame() {
          </div>
       ))}
     </div>
-    <div className="mt-2 w-full p-2 bg-custom-yellow-background mx-1 mr-1 lg:mx-0">
+    <div className="mt-2 w-[100%] p-2 bg-custom-yellow-background mx-1 mr-1 lg:mx-0">
     <div className="flex justify-between">
       <div className="flex space-x-1 items-center">
         <p className="text-[12px] lg:text-[14px] font-[600] font-poppins uppercase text-black">

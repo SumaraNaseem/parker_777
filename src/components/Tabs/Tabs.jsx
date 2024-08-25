@@ -16,7 +16,7 @@ const Tabs = () => {
   };
 
   return (
-    <div className="w-full">
+    <div className="w-full px-1 lg:px-0">
       {/* Tabs */}
       <div className="flex border border-slate-100">
         <button
@@ -56,7 +56,7 @@ const Tabs = () => {
            contentArray.map((content, index) => (
             <div key={index} className="px-3 py-1 flex border-b  border-b-gray-300 items-center space-x-2">
               <FaTv />
-              <p className="text-[14px] font-[500] w-[300px]">{content.location} {content.date}</p>
+              <p className="text-[14px]  font-[500] w-[300px]">{content.location} {content.date}</p>
               <div className="flex space-x-2">
                 {timeArray.slice(0, 8).map((time, timeIndex) => (
                   <div key={timeIndex} className="flex items-center">
