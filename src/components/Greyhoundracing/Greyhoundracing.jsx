@@ -16,13 +16,13 @@ function Greyhoundracing() {
         <div className="mt-2 w-full p-2 bg-custom-yellow-background mx-1 mr-1 lg:mx-0">
     <div className="flex justify-between">
       <div className="flex space-x-1 items-center">
-        <p className="text-[12px] lg:text-[14px] font-[600] font-poppins uppercase text-black">
+        <p className="text-[12px] whitespace-nowrap lg:text-[14px] font-[600] font-poppins uppercase text-black">
           Greyhound Racing
         </p>
         <FaDog className="font-[600] text-[20px]" />
       </div>
       <div className="flex justify-center items-center space-x-2">
-        <p className="text-[12px] font-poppins text-[#343A40] font-[600]">
+        <p className="text-[12px] whitespace-nowrap font-poppins text-[#343A40] font-[600]">
           View by:
         </p>
         <div className="flex flex-col space-y-2">

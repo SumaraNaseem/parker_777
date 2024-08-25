@@ -37,13 +37,16 @@ const Tabs = () => {
       <div className="bg-slate-50 ">
         {activeTab === 1 && (
           contentArray.map((content, index) => (
-            <div key={index} className="px-3 py-1 flex border-b  border-b-gray-300 items-center space-x-2">
+            <div key={index} className="px-3 py-1 lg:flex  sm:block border-b  border-b-gray-300 items-center space-x-2">
+              <div className='flex space-x-1 items-center'>
               <FaTv />
               <p className="text-[14px] font-[500] w-[300px]">{content.location} {content.date}</p>
-              <div className="flex space-x-2">
-                {timeArray.slice(0, 8).map((time, timeIndex) => (
+              </div>
+             
+              <div className="flex ">
+                {timeArray.slice(0, 7).map((time, timeIndex) => (
                   <div key={timeIndex} className="flex items-center">
-                    <p className="text-white px-[6px] py-1 text-[11px] font-[500] rounded-md bg-[#00162D]">
+                    <p className="text-white px-[6px] mr-1 py-1 text-[11px] font-[500] rounded-md bg-[#00162D]">
                       {time}
                     </p>
                   </div>
@@ -53,14 +56,17 @@ const Tabs = () => {
           ))
         )}
         {activeTab === 2 && (
-           contentArray.map((content, index) => (
-            <div key={index} className="px-3 py-1 flex border-b  border-b-gray-300 items-center space-x-2">
+          contentArray.map((content, index) => (
+            <div key={index} className="px-3 py-1 md:flex  sm:block border-b  border-b-gray-300 items-center space-x-2">
+              <div className='flex space-x-1 items-center'>
               <FaTv />
-              <p className="text-[14px]  font-[500] w-[300px]">{content.location} {content.date}</p>
-              <div className="flex space-x-2">
-                {timeArray.slice(0, 8).map((time, timeIndex) => (
+              <p className="text-[14px] font-[500] w-[300px]">{content.location} {content.date}</p>
+              </div>
+             
+              <div className="flex ">
+                {timeArray.slice(0, 7).map((time, timeIndex) => (
                   <div key={timeIndex} className="flex items-center">
-                    <p className="text-white px-[6px] py-1 text-[11px] font-[500] rounded-md bg-[#00162D]">
+                    <p className="text-white px-[6px] mr-1 py-1 text-[11px] font-[500] rounded-md bg-[#00162D]">
                       {time}
                     </p>
                   </div>
