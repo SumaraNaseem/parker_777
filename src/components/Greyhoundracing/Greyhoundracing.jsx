@@ -2,10 +2,10 @@ import React from 'react'
 import Sidebar from '../Sidebar/Sidebar';
 import Table from '../../components/Table/Table'
 import Cards from '../Cards/Cards';
-import { FaFootball } from "react-icons/fa6";
+import { FaDog } from "react-icons/fa";
+import Tabs from '../Tabs/Tabs';
 
-
-function Football() {
+function Greyhoundracing() {
   return (<>
    <div className="">
     <div className=" flex  min-w-fit py-1 gap-1">
@@ -17,9 +17,9 @@ function Football() {
     <div className="flex justify-between">
       <div className="flex space-x-1 items-center">
         <p className="text-[12px] lg:text-[14px] font-[600] font-poppins uppercase text-black">
-          Football
+          Greyhound Racing
         </p>
-        <FaFootball className="font-[600] text-[20px]" />
+        <FaDog className="font-[600] text-[20px]" />
       </div>
       <div className="flex justify-center items-center space-x-2">
         <p className="text-[12px] font-poppins text-[#343A40] font-[600]">
@@ -42,7 +42,7 @@ function Football() {
       </div>
     </div>
   </div>
-<Table/>
+<Tabs/>
 <Cards/>
 
 </div>
@@ -54,4 +54,4 @@ function Football() {
   )
 }
 
-export default Football
+export default Greyhoundracing

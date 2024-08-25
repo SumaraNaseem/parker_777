@@ -9,15 +9,16 @@ import { FaDog } from "react-icons/fa";
 import { MdOutlineCasino } from "react-icons/md";
 import { MdOutlineSportsKabaddi } from "react-icons/md";
 import { GiClick } from "react-icons/gi";
+
 export const navbarLinks = [
     { name: "Home", href: "/Dashboard" ,icon:<IoMdHome/> },
     { name: "INplay", href: "/Inplay" ,icon:<IoMdPlay/>},
     { name: "Cricket", href: "/cricket",icon:<GiCricketBat/> },
     { name: "Football", href: "/football" ,icon:<FaFootball/>},
     { name: "Tennis", href: "/tennis" ,icon:<IoTennisballOutline/>},
-    { name: "Casino", href: "/casino",icon:<MdOutlineCasino/> },
+    { name: "Casino", href: "/Casino" ,icon:<MdOutlineCasino/>},
     { name: "Horse rasing", href: "/horse-rasing" ,icon:<FaHorse/>},
-    { name: "Greyhound racing ", href: "greyhound-racing" ,icon:<FaDog/>},
+    { name: "Greyhound racing ", href: "/greyhound-racing" ,icon:<FaDog/>},
     { name: "Kabaddi", href: "/kabaddi",icon:<MdOutlineSportsKabaddi/> },
     { name: "Politics", href: "/politics" ,icon:<GiClick/>},
    

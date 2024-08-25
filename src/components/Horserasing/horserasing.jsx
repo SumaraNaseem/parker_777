@@ -2,7 +2,8 @@ import React from 'react'
 import Sidebar from '../Sidebar/Sidebar';
 import Table from '../../components/Table/Table'
 import Cards from '../Cards/Cards';
-import { FaFootball } from "react-icons/fa6";
+import { FaHorse } from "react-icons/fa6";
+import Tabs from '../../components/Tabs/Tabs'
 
 
 function Football() {
@@ -17,9 +18,9 @@ function Football() {
     <div className="flex justify-between">
       <div className="flex space-x-1 items-center">
         <p className="text-[12px] lg:text-[14px] font-[600] font-poppins uppercase text-black">
-          Football
+         Horserasing
         </p>
-        <FaFootball className="font-[600] text-[20px]" />
+        <FaHorse className="font-[600] text-[20px]" />
       </div>
       <div className="flex justify-center items-center space-x-2">
         <p className="text-[12px] font-poppins text-[#343A40] font-[600]">
@@ -42,7 +43,7 @@ function Football() {
       </div>
     </div>
   </div>
-<Table/>
+<Tabs/>
 <Cards/>
 
 </div>

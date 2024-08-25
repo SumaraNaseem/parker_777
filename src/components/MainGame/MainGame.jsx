@@ -5,6 +5,7 @@ import RightSideCard from '../../components/RightSideCard/RightSideCard';
 import Table from '../../components/Table/Table';
 import { GiCricketBat } from "react-icons/gi";
 import Cards from '../Cards/Cards';
+import Upcoming from '../Upcomming/upcomming';
 function MainGame() {
   const [currentDateTime, setCurrentDateTime] = useState(new Date());
 
@@ -68,23 +69,14 @@ function MainGame() {
     </div>
   </div>
   <Table /> 
+  <Upcoming/>
   </div>
   <div class="hidden lg:block lg:col-span-3 px-1 lg:px-0 ">
    <RightSideCard/>
   </div>
 </div>
 <Cards/>
-        {/* <div className="grid grid-cols-2 mt-2 px-1 lg:px-0 sm:grid-cols-2 lg:grid-cols-6 gap-1">
-          {Array.from({ length: 42 }).map((_, index) => (
-            <div key={index} className="">
-              <img
-                src="https://parker777.io/assets/img/casino1/aura-gaming-lobby.webp"
-                alt={`Image ${index + 1}`}
-                className="w-full h-full object-cover"
-              />
-            </div>
-          ))}
-        </div>  */}
+        
    
     </>
   );

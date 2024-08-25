@@ -4,15 +4,20 @@ import { Link } from 'react-router-dom';
 import { navbarLinks } from "../../data/data"
 
 function Navbarsec() {
-    const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(null);
   return (
     <div>
-    <div className='bg-custom-yellow-background  pt-[86px] py-1 flex justify-center '>
-          <ul className='flex  max-w-full  items-center overflow-y-auto scrollbar-hidden  w-[1013px]  '>
-            {navbarLinks.map((link, index) => (
+      <div className='bg-custom-yellow-background  pt-[86px] py-1 flex justify-center '>
+        <ul className='flex  max-w-full  items-center overflow-y-auto scrollbar-hidden  w-[1060px]  '>
+          {navbarLinks.map((link, index) => (
+            <Link to={link.href}
+
+              className={`text-[12.72px] whitespace-nowrap uppercase font-[500] font-poppins 
+              p-1`}
+            >
               <div
                 key={index}
-                className={`flex justify-center  p-1 items-center hover:bg-opacity-20 hover:bg-black hove:p-1  rounded-md ${activeIndex === index ? 'bg-opacity-20  bg-black rounded-md' : ' '
+                className={`flex justify-center    p-1 items-center hover:bg-opacity-20 hover:bg-black hove:p-1  rounded-md ${activeIndex === index ? 'bg-opacity-20  bg-black rounded-md' : ' '
                   }`}
                 onClick={() => setActiveIndex(index)}
               >
@@ -20,27 +25,22 @@ function Navbarsec() {
                   {link.icon}
                 </li>
                 <li>
-                <Link to={link.href}
-                   
-                    className={`text-[12.72px] whitespace-nowrap uppercase font-[500] font-poppins 
-                   p-1`}
-                  >
-                    {link.name}
-                    </Link>
+                  {link.name}
                 </li>
               </div>
-            ))}
-          </ul>
+            </Link>
+          ))}
+        </ul>
+      </div>
+      <div className='flex justify-between items-center mx-1  my-1 overflow-hidden'>
+        <div className='text-white p-1.5  rounded-sm z-10  bg-custom-yellow-background'>
+          <GrAnnounce />
         </div>
-        <div className='flex justify-between items-center mx-1  my-1 overflow-hidden'>
-          <div className='text-white p-1.5  rounded-sm z-10  bg-custom-yellow-background'>
-            <GrAnnounce />
-          </div>
-    
-          <p className="text-white w-[60%] z-6 scroll-left text-[13px] font-[400] capitalize">
-            Welcome To Our Exchange
-          </p>
-        </div>
+
+        <p className="text-white w-[60%] z-6 scroll-left text-[13px] font-[400] capitalize">
+          Welcome To Our Exchange
+        </p>
+      </div>
     </div>
   )
 }
