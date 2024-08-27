@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { TbPlayFootball } from "react-icons/tb";
-function Table() {
-    const [currentDateTime, setCurrentDateTime] = useState(new Date());
+import { useNavigate } from 'react-router-dom';
 
+function Table({ selectedOption }) {
+  const navigate = useNavigate();
+    const [currentDateTime, setCurrentDateTime] = useState(new Date());
+    const handleClick = () => {
+      navigate('/events'); // Replace with your target route
+    };
     useEffect(() => {
         const interval = setInterval(() => {
           setCurrentDateTime(new Date());
@@ -28,11 +33,13 @@ function Table() {
                 </div>
               </div>
             <table className="table-auto min-w-full">
-        <thead className='flex'>
-                <div className='flex justify-start '>
+            {selectedOption === 'Competition' && (
+        <thead className='flex '>
+                <div className='flex justify-start  '>
                   <p class="text-white  py-1 text-[16px] font-[600]"> County Championship Division 1</p>
                 </div>
               </thead>
+            )}
 
         <tbody className="bg-white">
           {Array.from({ length: 1 }).map((_, index) => (
@@ -47,7 +54,7 @@ function Table() {
                         <p className="h-2 w-2"></p>
                       </div>
                     </div>
-                    <p className="pr-1 text-[13px] font-[600] font-poppins">Pakistan v Bangladesh</p>
+                    <p  onClick={handleClick} className="pr-1 cursor-pointer text-[13px] font-[600]  font-poppins">Pakistan v Bangladesh</p>
                   </div>
                   <div className="flex space-x-2 justify-end">
                     <img className="w-5 h-5" src="https://parker777.io/assets/img/icons/bm.svg" alt="b logo" />
@@ -67,11 +74,13 @@ function Table() {
         </tbody>
       </table>
       <table className="table-auto min-w-full">
+       {selectedOption === 'Competition' && (
         <thead className='flex'>
                 <div className='flex justify-start '>
                   <p class="text-white  py-1 text-[16px] font-[600]"> General Competition</p>
                 </div>
               </thead>
+      )}
 
         <tbody className="bg-white">
           {Array.from({ length: 3 }).map((_, index) => (
@@ -106,6 +115,7 @@ function Table() {
         </tbody>
       </table>
       <table className="table-auto min-w-full">
+       {selectedOption === 'Competition' && (
         <thead className='flex'>
                 <div className='flex justify-start '>
                   <p class="text-white  py-1 text-[16px] font-[600]"> International Twenty20 Matches
@@ -113,6 +123,7 @@ function Table() {
 </p>
                 </div>
               </thead>
+      )}
 
         <tbody className="bg-white">
           {Array.from({ length: 2 }).map((_, index) => (
@@ -147,13 +158,14 @@ function Table() {
         </tbody>
       </table>
       <table className="table-auto min-w-full">
+       {selectedOption === 'Competition' && (
         <thead className='flex'>
                 <div className='flex justify-start '>
                   <p class="text-white  py-1 text-[16px] font-[600]"> Max60
 
 </p>
                 </div>
-              </thead>
+              </thead>)}
 
         <tbody className="bg-white">
           {Array.from({ length: 1 }).map((_, index) => (
@@ -188,11 +200,12 @@ function Table() {
         </tbody>
       </table>
       <table className="table-auto min-w-full">
+       {selectedOption === 'Competition' && (
         <thead className='flex'>
                 <div className='flex justify-start '>
                   <p class="text-white  py-1 text-[16px] font-[600]">Women's Caribbean Premier League</p>
                 </div>
-              </thead>
+              </thead>)}
 
         <tbody className="bg-white">
           {Array.from({ length: 1 }).map((_, index) => (
@@ -227,11 +240,13 @@ function Table() {
         </tbody>
       </table>
       <table className="table-auto min-w-full">
+       {selectedOption === 'Competition' && (
         <thead className='flex'>
                 <div className='flex justify-start '>
                   <p class="text-white  py-1 text-[16px] font-[600]"> County Championship Division 1</p>
                 </div>
               </thead>
+      )}
 
         <tbody className="bg-white">
           {Array.from({ length: 3 }).map((_, index) => (
@@ -266,11 +281,12 @@ function Table() {
         </tbody>
       </table>
       <table className="table-auto min-w-full">
+       {selectedOption === 'Competition' && (
         <thead className='flex'>
                 <div className='flex justify-start '>
                   <p class="text-white  py-1 text-[16px] font-[600]"> Women's Caribbean Premier League</p>
                 </div>
-              </thead>
+              </thead>)}
 
         <tbody className="bg-white">
           {Array.from({ length: 1 }).map((_, index) => (

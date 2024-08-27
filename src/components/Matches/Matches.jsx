@@ -16,7 +16,7 @@ const items = [
     alt: "Andar Bahar",
   },
 ];
-function RightSideCard() {
+function Matches() {
   return (
     <div className='space-y-1 overflow-hidden'>
    
@@ -46,4 +46,4 @@ function RightSideCard() {
   )
 }
 
-export default RightSideCard
+export default Matches

@@ -1,14 +1,13 @@
-import React from "react";
-import Casino from "../../components/Casino/Casino";
+import React from 'react'
+import Events from '../../components/Evants/Events'
 
 function page({burgerState}) {
   return (
     <div className="flex flex-col min-h-screen overflow-x-hidden">
       <div className="block ">
-        <Casino burgerState={burgerState} />
+        <Events burgerState={burgerState} />
       </div>
     </div>
-  );
+  )
 }
-
-export default page;
+export default page

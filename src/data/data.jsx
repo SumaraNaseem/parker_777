@@ -9,6 +9,8 @@ import { FaDog } from "react-icons/fa";
 import { MdOutlineCasino } from "react-icons/md";
 import { MdOutlineSportsKabaddi } from "react-icons/md";
 import { GiClick } from "react-icons/gi";
+import { SiMultisim } from "react-icons/si";
+import { GiIceSpellCast } from "react-icons/gi";
 
 export const navbarLinks = [
     { name: "Home", href: "/Dashboard" ,icon:<IoMdHome/> },
@@ -21,6 +23,8 @@ export const navbarLinks = [
     { name: "Greyhound racing ", href: "/greyhound-racing" ,icon:<FaDog/>},
     { name: "Kabaddi", href: "/kabaddi",icon:<MdOutlineSportsKabaddi/> },
     { name: "Politics", href: "/politics" ,icon:<GiClick/>},
+    { name: " I Casino", href: "/ I-Casino" ,icon:<GiIceSpellCast/>},
+    { name: "Multi Market", href: "/Multi-Market" ,icon:<SiMultisim/>},
    
   ];
   export const sideBarLinks = [
@@ -33,6 +37,8 @@ export const navbarLinks = [
     { name: "Greyhound racing ", href: "sports/4339" ,icon:<FaDog/>},
     { name: "Kabaddi", href: "/sports/99994",icon:<MdOutlineSportsKabaddi/> },
     { name: "Politics", href: "/sports/2378961" ,icon:<GiClick/>},
+    { name: " I Casino", href: "/ I-Casino" ,icon:<GiIceSpellCast/>},
+    { name: "Multi Market", href: "/Multi-Market" ,icon:<SiMultisim/>},
    
   ];
 

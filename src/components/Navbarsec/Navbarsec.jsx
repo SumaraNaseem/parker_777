@@ -3,12 +3,13 @@ import { GrAnnounce } from "react-icons/gr";
 import { Link } from 'react-router-dom';
 import { navbarLinks } from "../../data/data"
 
+
 function Navbarsec() {
   const [activeIndex, setActiveIndex] = useState(null);
   return (
     <div>
       <div className='bg-custom-yellow-background  pt-[86px] py-1 flex justify-center '>
-        <ul className='flex  max-w-full  items-center overflow-y-auto scrollbar-hidden  w-[1060px]  '>
+        <ul className='flex  max-w-full  items-center overflow-y-auto scrollbar-hidden justify-center   '>
           {navbarLinks.map((link, index) => (
             <Link to={link.href}
 
@@ -38,7 +39,7 @@ function Navbarsec() {
         </div>
 
         <p className="text-white w-[60%] z-6 scroll-left text-[13px] font-[400] capitalize">
-          Welcome To Our Exchange
+          Take A Chance, Embrace The Thrill. Unleash The Excitement With Our Casino Gaming….
         </p>
       </div>
     </div>

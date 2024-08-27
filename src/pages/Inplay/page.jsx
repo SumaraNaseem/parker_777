@@ -6,11 +6,11 @@ import Navbarsec from "../../components/Navbarsec/Navbarsec";
 // import LayOut from '../../components/Layout/Layout';
 import Inplay from "../../components/Inplay/Inplay";
 
-function page() {
+function page({burgerState}) {
   return (
     <div className="flex flex-col min-h-screen overflow-x-hidden">
       <div className="block ">
-        <Inplay />
+        <Inplay burgerState={burgerState} />
       </div>
     </div>
   );

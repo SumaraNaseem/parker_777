@@ -7,6 +7,11 @@ const contentArray = [
   { location: "Richmond (AUS)", date: "25th Aug" },
   { location: "Windsor", date: "26th Aug" }
 ];
+const contentSecArray = [
+  { location: "Kinsley", date: "25th Aug" },
+  { location: "Crayford (AUS)", date: "25th Aug" },
+  { location: "Windsor", date: "26th Aug" }
+];
 
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState(1);
@@ -56,7 +61,7 @@ const Tabs = () => {
           ))
         )}
         {activeTab === 2 && (
-          contentArray.map((content, index) => (
+          contentSecArray.map((content, index) => (
             <div key={index} className="px-3 py-1 md:flex  sm:block border-b  border-b-gray-300 items-center space-x-2">
               <div className='flex space-x-1 items-center'>
               <FaTv />
