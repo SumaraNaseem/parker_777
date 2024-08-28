@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 import { sideBarLinks } from "../../data/data";
+import { button } from "@material-tailwind/react";
 
 const Navbar = ({ setBurgerState, burgerState }) => {
   const [showModal, setShowModal] = useState(false);
@@ -174,26 +175,48 @@ const Navbar = ({ setBurgerState, burgerState }) => {
               <GiHamburgerMenu />
             </button>
           </div>
-          <div className="space-x-2 flex items-center">
-            <button
-              onClick={() => handleOpenModal("login")}
-              className="bg-custom-yellow-background hover:opacity-40 font-[400] text-[14px] px-4 py-1.5 rounded-[3px] ml-auto"
-            >
-              Sign In
-            </button>
-            <button
-              onClick={() => handleOpenModal("register")}
-              className="bg-custom-yellow-background hover:opacity-40 font-[400] text-[14px] px-4 py-1.5 rounded-[3px] ml-auto"
-            >
-              Sign Up
-            </button>
-            <button
-              className="text-white sm:hidden block text-[25px]"
-              onClick={() => toggleDrawer("right")}
-            >
-              <GiHamburgerMenu />
-            </button>
-          </div>
+          {localStorage.getItem("UserEmail")? <div className="space-x-2 flex items-center">
+
+<button
+  onClick={() => handleOpenModal("login")}
+  className="bg-custom-yellow-background hover:opacity-40 font-[400] text-[14px] px-4 py-1.5 rounded-[3px] ml-auto"
+>
+  421.09
+</button>
+<button
+  onClick={() => handleOpenModal("register")}
+  className="bg-custom-yellow-background hover:opacity-40 font-[400] text-[14px] px-4 py-1.5 rounded-[3px] ml-auto"
+>
+  Demo1006
+</button>
+<button
+  className="text-white sm:hidden block text-[25px]"
+  onClick={() => toggleDrawer("right")}
+>
+  <GiHamburgerMenu />
+</button>
+</div> : <div className="space-x-2 flex items-center">
+
+<button
+  onClick={() => handleOpenModal("login")}
+  className="bg-custom-yellow-background hover:opacity-40 font-[400] text-[14px] px-4 py-1.5 rounded-[3px] ml-auto"
+>
+  Sign In
+</button>
+<button
+  onClick={() => handleOpenModal("register")}
+  className="bg-custom-yellow-background hover:opacity-40 font-[400] text-[14px] px-4 py-1.5 rounded-[3px] ml-auto"
+>
+  Sign Up
+</button>
+<button
+  className="text-white sm:hidden block text-[25px]"
+  onClick={() => toggleDrawer("right")}
+>
+  <GiHamburgerMenu />
+</button>
+</div>}
+         
         </div>
       </div>
       <Modal

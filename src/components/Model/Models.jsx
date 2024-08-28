@@ -58,6 +58,7 @@ function Modal({ showModal, handleClose, formType, setFormType }) {
           validationSchema={validationSchema}
           onSubmit={(values) => {
             console.log('Form data', values);
+            localStorage.setItem("UserEmail",values.email)
             navigate('/');
             handleClose();
           }}
