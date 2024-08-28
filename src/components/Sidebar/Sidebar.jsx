@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FaChevronDown, FaLink } from "react-icons/fa";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 import { sideBarLinks } from "../../data/data";
+import { useLocation } from "react-router-dom";
 
 const Sidebar = ({ burgerState }) => {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -15,13 +16,16 @@ const Sidebar = ({ burgerState }) => {
   const toggleSubDropdown = (index) => {
     setOpenSubDropdown(openSubDropdown === index ? null : index);
   };
-
+  const location = useLocation();
+  console.log("location", location.pathname);
   return (
     <div
-    className={`h-[100%] transform transition-all duration-500 ease-in-out ${
-      burgerState ? "w-[230px]" : "w-[50px]"
-    } sticky top-0 bg-sidebar-bg-color text-white`}
-  >
+      className={`h-[100%] ${
+        location.pathname === "/" ? "hidden" : "block"
+      }  transform transition-all duration-500 ease-in-out ${
+        burgerState ? "w-[230px]" : "w-[50px]"
+      } sticky top-0 bg-sidebar-bg-color text-white`}
+    >
       <ul className="space-y-0.2">
         {sideBarLinks.map((item, index) => (
           <li key={index} className="relative bg-sidebar-bg-color">
@@ -30,7 +34,9 @@ const Sidebar = ({ burgerState }) => {
               className="w-full py-2 px-4 text-left border-b border-b-slate-800 flex justify-between items-center bg-sidebar-bg-color hover:bg-gray-700"
             >
               <span className="flex items-center">
-                <span className={`mr-2 ${burgerState ?"":"py-2"}`}>{item.icon}</span>
+                <span className={`mr-2 ${burgerState ? "" : "py-2"}`}>
+                  {item.icon}
+                </span>
                 {burgerState && item.name}
               </span>
               {openDropdown === index ? (
@@ -51,10 +57,10 @@ const Sidebar = ({ burgerState }) => {
                         <FaLink className="mr-2" /> Dropdown {subIndex + 1}
                       </span>
                       {openDropdown === index ? (
-                <MdArrowForwardIos />
-              ) : (
-                <MdArrowBackIos />
-              )}
+                        <MdArrowForwardIos />
+                      ) : (
+                        <MdArrowBackIos />
+                      )}
                     </button>
                     {openSubDropdown === subIndex && (
                       <ul className="bg-gray-600">
