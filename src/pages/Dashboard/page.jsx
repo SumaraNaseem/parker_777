@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import LayOut from "../../components/Layout/Layout";
 
-function Page({ burgerState }) {
+function Page() {
   const [activeItem, setActiveItem] = useState(null);
   const [dropdownOpen, setDropdownOpen] = useState(null);
   const [subDropdownOpen, setSubDropdownOpen] = useState(null);
@@ -20,7 +20,7 @@ function Page({ burgerState }) {
   };
   return (
     <div>
-      <LayOut burgerState={burgerState} />
+      <LayOut />
     </div>
   );
 }

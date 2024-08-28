@@ -1,11 +1,11 @@
 import React from "react";
 import FootBall from "../../components/Football/Football";
 
-function page({burgerState}) {
+function page() {
   return (
     <div className="flex flex-col min-h-screen overflow-x-hidden">
       <div className="block ">
-        <FootBall burgerState={burgerState} />
+        <FootBall />
       </div>
     </div>
   );

@@ -6,9 +6,9 @@ function Cricket({ burgerState }) {
   return (
     <div className="w-full">
       <div className=" flex w-full min-w-fit py-1 gap-1">
-        <div className="hidden lg:block ">
+        {/* <div className="hidden lg:block ">
           <Sidebar burgerState={burgerState} />
-        </div>
+        </div> */}
         <div className="w-full">
           <MainGame />
         </div>

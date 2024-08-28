@@ -1,13 +1,13 @@
-import React from 'react'
-import Events from '../../components/Evants/Events'
+import React from "react";
+import Events from "../../components/Evants/Events";
 
-function page({burgerState}) {
+function page() {
   return (
     <div className="flex flex-col min-h-screen overflow-x-hidden">
       <div className="block ">
-        <Events burgerState={burgerState} />
+        <Events />
       </div>
     </div>
-  )
+  );
 }
-export default page
+export default page;

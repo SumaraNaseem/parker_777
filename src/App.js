@@ -13,9 +13,10 @@ import Greyhoundracing from "./pages/Greyhoundracing/page";
 import Kabaddi from "./pages/Kabaddi/page";
 import Politics from "./pages/Politics/page";
 import Navbar from "./components/Navbar/nabvar";
-import Events from "./pages/Events/page"
+import Events from "./pages/Events/page";
 import Navbarsec from "./components/Navbarsec/Navbarsec";
 import { useState } from "react";
+import Sidebar from "./components/Sidebar/Sidebar";
 
 function App() {
   const [burgerState, setBurgerState] = useState(true);
@@ -25,24 +26,28 @@ function App() {
         <Navbar setBurgerState={setBurgerState} burgerState={burgerState} />
       </div>
       <Navbarsec />
-
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route
-          path="/dashboard"
-          element={<Dashboard burgerState={burgerState} />}
-        />
-        <Route path="/inplay" element={<Inplay  burgerState={burgerState}/>} />
-        <Route path="/cricket" element={<Cricket  burgerState={burgerState}/>} />
-        <Route path="/football" element={<Football burgerState={burgerState}/>} />
-        <Route path="/tennis" element={<Tennis burgerState={burgerState}/>} />
-        <Route path="/casino" element={<Casino burgerState={burgerState}/>} />
-        <Route path="/horse-rasing" element={<Horserasing burgerState={burgerState}/>} />
-        <Route path="/greyhound-racing" element={<Greyhoundracing burgerState={burgerState}/>} />
-        <Route path="/kabaddi" element={<Kabaddi burgerState={burgerState}/>} />
-        <Route path="/politics" element={<Politics burgerState={burgerState}/>} />
-        <Route path="/events" element={<Events burgerState={burgerState}/>} />
       </Routes>
+      <div className=" flex w-full min-w-fit py-1 gap-1">
+        <div className="hidden lg:block ">
+          <Sidebar burgerState={burgerState} />
+        </div>
+        <Routes>
+          <Route path="/dashboard" element={<Dashboard />} />
+
+          <Route path="/inplay" element={<Inplay />} />
+          <Route path="/cricket" element={<Cricket />} />
+          <Route path="/football" element={<Football />} />
+          <Route path="/tennis" element={<Tennis />} />
+          <Route path="/casino" element={<Casino />} />
+          <Route path="/horse-rasing" element={<Horserasing />} />
+          <Route path="/greyhound-racing" element={<Greyhoundracing />} />
+          <Route path="/kabaddi" element={<Kabaddi />} />
+          <Route path="/politics" element={<Politics />} />
+          <Route path="/events" element={<Events />} />
+        </Routes>
+      </div>
     </BrowserRouter>
   );
 }
