@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { MainGamesImage } from "../../data/data";
-import { RiArrowDropDownLine } from "react-icons/ri";
 import RightSideCard from "../../components/RightSideCard/RightSideCard";
 import Table from "../../components/Table/Table";
 import { GiCricketBat } from "react-icons/gi";
 import Cards from "../Cards/Cards";
 import Upcoming from "../Upcomming/upcomming";
 function MainGame() {
-  const [currentDateTime, setCurrentDateTime] = useState(new Date());
   const [selectedOption, setSelectedOption] = useState("Competition");
+  const [currentDateTime, setCurrentDateTime] = useState(null);
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentDateTime(new Date());
@@ -22,7 +21,7 @@ function MainGame() {
 
   return (
     <>
-      <div class="grid grid-cols-12 gap-1 ">
+      <div class="grid grid-cols-12 gap-1 -z-50">
         <div className="col-span-12 lg:col-span-9 ">
           <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 gap-1 px-1 lg:px-0">
             {MainGamesImage?.map((image, index) => (
@@ -42,7 +41,7 @@ function MainGame() {
               </div>
             ))}
           </div>
-          <div className="mt-2 w-[100%] p-2 bg-custom-yellow-background mx-1 mr-1 lg:mx-0">
+          <div className="mt-2 p-2 bg-custom-yellow-background mx-1  lg:mx-0">
             <div className="flex justify-between">
               <div className="flex space-x-1 items-center">
                 <p className="text-[12px] lg:text-[14px] font-[600] font-poppins uppercase text-black">

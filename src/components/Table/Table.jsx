@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { TbPlayFootball } from "react-icons/tb";
 import { useNavigate } from 'react-router-dom';
 
 function Table({ selectedOption }) {
@@ -22,14 +21,14 @@ function Table({ selectedOption }) {
           <div class="w-full overflow-x-auto">
           <div className='lg:hidden sm:block'>
                 <div className='flex justify-start '>
-                  <p class="text-white text-[18px] font-[600]"> Compitation</p>
+                  <p class="text-white text-[15px] font-[600]"> Compitation</p>
                 </div>
               </div>
               <div className='hidden lg:block w-full'>
                 <div className='flex justify-end items-center  '>
-                  <p class="text-white text-[18px] font-[600] pr-24 text-left"> 1 </p>
-                  <p class="text-white  text-[18px] font-[600] pr-20  text-left"> x </p>
-                  <p class="text-white text-[18px] font-[600] pr-9  text-left"> 2</p>
+                  <p class="text-white text-[15px] font-[600] pr-[90px] text-left"> 1 </p>
+                  <p class="text-white  text-[15px] font-[600] pr-[72px]  text-left"> X </p>
+                  <p class="text-white text-[15px] font-[600] pr-8  text-left"> 2</p>
                 </div>
               </div>
             <table className="table-auto min-w-full">

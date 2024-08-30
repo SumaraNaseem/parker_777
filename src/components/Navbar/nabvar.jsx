@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import logo from "../../assest/logo.png";
 import Modal from "../../components/Model/Models";
-import { FaChevronDown, FaLink } from "react-icons/fa";
+import { FaLink } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 import { sideBarLinks } from "../../data/data";
-import { button } from "@material-tailwind/react";
 
 const Navbar = ({ setBurgerState, burgerState }) => {
   const [showModal, setShowModal] = useState(false);
@@ -22,11 +21,7 @@ const Navbar = ({ setBurgerState, burgerState }) => {
 
   const toggleSubDropdown = (index) => {
     setOpenSubDropdown(openSubDropdown === index ? null : index);
-
-
   }
-
-
 
   const [openDrawer, setOpenDrawer] = useState({
     top: false,
@@ -209,12 +204,12 @@ const Navbar = ({ setBurgerState, burgerState }) => {
 >
   Sign Up
 </button>
-<button
+{/* <button
   className="text-white sm:hidden block text-[25px]"
   onClick={() => toggleDrawer("right")}
 >
   <GiHamburgerMenu />
-</button>
+</button> */}
 </div>}
          
         </div>

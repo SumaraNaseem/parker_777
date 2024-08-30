@@ -1,7 +1,4 @@
 import React from "react";
-import Sidebar from "../Sidebar/Sidebar";
-import MainGame from "../MainGame/MainGame";
-import RightSideCard from "../RightSideCard/RightSideCard";
 import Multimarket from "../../components/Multimarket/Multimarket";
 
 function Events() {

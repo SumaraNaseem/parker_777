@@ -1,5 +1,4 @@
 import "./App.css";
-import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/page";
 import Dashboard from "./pages/Dashboard/page";
@@ -17,6 +16,7 @@ import Events from "./pages/Events/page";
 import Navbarsec from "./components/Navbarsec/Navbarsec";
 import { useState } from "react";
 import Sidebar from "./components/Sidebar/Sidebar";
+import FooterBar from './components/FooterBar/FooterBar'
 
 function App() {
   const [burgerState, setBurgerState] = useState(true);
@@ -35,7 +35,6 @@ function App() {
         </div>
         <Routes>
           <Route path="/dashboard" element={<Dashboard />} />
-
           <Route path="/inplay" element={<Inplay />} />
           <Route path="/cricket" element={<Cricket />} />
           <Route path="/football" element={<Football />} />
@@ -47,7 +46,12 @@ function App() {
           <Route path="/politics" element={<Politics />} />
           <Route path="/events" element={<Events />} />
         </Routes>
+        
       </div>
+      <div className="block lg:hidden ">
+          <FooterBar />
+        </div>
+        
     </BrowserRouter>
   );
 }

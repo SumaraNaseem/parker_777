@@ -1,6 +1,5 @@
 import React from "react";
-import Navbar from "../../components/Navbar/nabvar";
-import Navbarsec from "../../components/Navbarsec/Navbarsec";
+
 import CricketNav from "../../components/CricketNav/CricketNav";
 
 function page() {

@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Sidebar from "../Sidebar/Sidebar";
-import MainGame from "../MainGame/MainGame";
 import Table from "../../components/Table/Table";
 import { IoMdPlay } from "react-icons/io";
 import Cards from "../Cards/Cards";
@@ -17,7 +15,7 @@ function Inplay() {
       <div className="">
         <div className=" flex  min-w-fit  gap-1">
           <div className="w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1">
-            <div className=" w-full p-2 bg-custom-yellow-background mx-1 mr-1 lg:mx-0">
+            <div className="p-2 bg-custom-yellow-background mx-1 lg:mx-0">
               <div className="flex justify-between">
                 <div className="flex space-x-1 items-center">
                   <p className="text-[12px] lg:text-[14px] font-[600] font-poppins uppercase text-black">

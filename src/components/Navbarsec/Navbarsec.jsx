@@ -9,7 +9,7 @@ function Navbarsec() {
   return (
     <div>
       <div className='bg-custom-yellow-background  pt-[86px] py-1 flex justify-center '>
-        <ul className='flex  max-w-full  items-center overflow-y-auto scrollbar-hidden justify-center   '>
+        <ul className='flex  max-w-full  items-center overflow-y-auto scrollbar-hidden  w-[1013px] lg:justify-center lg:w-full '>
           {navbarLinks.map((link, index) => (
             <Link to={link.href}
 

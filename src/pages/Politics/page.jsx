@@ -1,6 +1,4 @@
 import React from "react";
-import Navbar from "../../components/Navbar/nabvar";
-import Navbarsec from "../../components/Navbarsec/Navbarsec";
 import Politics from "../../components/Politics/Politics";
 
 function page() {
